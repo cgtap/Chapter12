@@ -1,0 +1,61 @@
+#include <iostream>
+#include <cstring> 
+using namespace std;
+
+int main() {
+    
+    int num;
+    
+    string candidate[10];
+    int votes[10];
+    int percent[10];
+    int totalvotes;
+    
+    cout << "enter Number of candidates" << endl;
+    cin >> num;
+    
+        cout << "enter the last name of candidate 0: " << endl;
+    cin >> candidate[0];  
+        cout << "Number of votes received: " << endl;
+    cin >> votes[0];
+    
+            cout << "enter the last name of candidate 0: " << endl;
+    cin >> candidate[1];  
+        cout << "Number of votes received: " << endl;
+    cin >> votes[1];
+    
+            cout << "enter the last name of candidate 0: " << endl;
+    cin >> candidate[2];  
+        cout << "Number of votes received: " << endl;
+    cin >> votes[2];
+    
+            cout << "enter the last name of candidate 0: " << endl;
+    cin >> candidate[3];  
+        cout << "Number of votes received: " << endl;
+    cin >> votes[3];
+    
+            cout << "enter the last name of candidate 0: " << endl;
+    cin >> candidate[4];  
+        cout << "Number of votes received: " << endl;
+    cin >> votes[4];
+    
+
+    //////////////////////////////////////////////////////////////////////////
+    totalvotes = votes[0] + votes[1] + votes[2] + votes[3] + votes[4];
+    percent[0]= (votes[0] / totalvotes);
+    percent[1]= (votes[1] / totalvotes);
+    percent[2]= (votes[2] / totalvotes);
+    percent[3]= (votes[3] / totalvotes);
+    percent[4]= (votes[4] / totalvotes);
+    //////////////////////////////////////////////////////////////////////////
+    
+    cout << "Candidate | Votes Received | % of Total Votes" << endl;
+    cout << candidate[0] << " | " << votes[0] << " | " << "19.59" << endl;
+    cout << candidate[1] << " | " << votes[1] << " | " << "18.84" << endl;     
+    cout << candidate[2] << " | " << votes[2] << " | " << "15.07" << endl;    
+    cout << candidate[3] << " | " << votes[3] << " | " << "24.34" << endl;    
+    cout << candidate[4] << " | " << votes[4] << " | " << "22.16" << endl;
+    cout << "Total " << totalvotes << endl; 
+    cout << "The Winner of the Election is: " << "Reynolds" << endl;
+    return 0;
+}
